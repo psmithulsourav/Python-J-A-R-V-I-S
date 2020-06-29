@@ -11,7 +11,7 @@ import sys
 
 engine = pyttsx3.init('sapi5')
 
-client = wolframalpha.Client('8JVVL2-EGJHV2V5KV')
+client = wolframalpha.Client('YOUR WOLFRAM ALPHA AP ID')
 
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[len(voices)-1].id)
@@ -34,7 +34,7 @@ def greetMe():
 
 greetMe()
 
-speak('Hello Mithul')
+speak('Hello YOUR NAME')
 speak('How may I help you?')
 
 
@@ -50,7 +50,7 @@ def myCommand():
         print('User: ' + query + '\n')
         
     except sr.UnknownValueError:
-        speak('Sorry Mithul! I didn\'t get that! Try typing the command!')
+        speak('Sorry YOUR NAME! I didn\'t get that! Try typing the command!')
         query = str(input('Command: '))
 
     return query
@@ -78,44 +78,22 @@ if __name__ == '__main__':
         elif "what\'s up" in query or 'how are you' in query:
             stMsgs = ['Just doing my thing!', 'I am fine!', 'Nice!', 'I am nice and full of energy']
             speak(random.choice(stMsgs))
-        elif'open schoology' in query:
+        elif'open WEBSITE' in query:
             speak('okay')
-            webbrowser.open('https://app.schoology.com/course/2458694430/updates') 
+            webbrowser.open('THE LINK') 
         elif 'open stackoverflow' in query:
             speak('okay')
-            webbrowser.open('www.stackoverflow.com')   
-
-        elif 'email' in query:
-            speak('Who is the recipient? ')
-            recipient = myCommand()
-
-            if 'me' in recipient:
-                try:
-                    speak('What should I say? ')
-                    content = myCommand()
-        
-                    server = smtplib.SMTP('padmamithul123.gmail.com', 587)
-                    server.ehlo()
-                    server.starttls()
-                    server.login("padmamithul123@gmail.com", 'mithulwert')
-                    server.sendmail('Your_Username', "Recipient_Username", content)
-                    server.close()
-                    speak('Email sent!')
-
-                except:
-                    speak('Sorry mithul! I am unable to send your message at this moment!')
-
-
+            webbrowser.open('www.stackoverflow.com') 
         elif 'nothing' in query or 'abort' in query or 'stop' in query:
             speak('okay')
-            speak('Bye mithul, have a good day.')
+            speak('Bye YOUR NAME, have a good day.')
             sys.exit()
            
         elif 'hello' in query:
-            speak('Hello Mithul')
+            speak('Hello YOUR NAME')
 
         elif 'bye' in query:
-            speak('Bye mithul, have a good day.')
+            speak('Bye YOUR NAME, have a good day.')
             sys.exit()
         else:
             query = query
@@ -137,4 +115,4 @@ if __name__ == '__main__':
             except:
                 webbrowser.open('www.google.com')
         
-        speak('what else mithul')
+        speak('what else YOUR NAME')
