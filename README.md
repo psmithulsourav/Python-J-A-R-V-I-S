@@ -134,6 +134,6 @@ Wolfram alpha API id
         
         speak('what else YOUR NAME') (add your name here)
 </div>
-<strong>Additional Info</strong>
+<p><strong><h1>Additional Info</h1></strong></p>
 <p>Anyone Can Use the File's given here, with the use of this License...</p>
 <p>Please refrain from using these content from any malicious use. I do not claim responsibility or involvement for any trouble you may get into by using these files....</p>
