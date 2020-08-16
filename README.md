@@ -1,3 +1,11 @@
+<p><strong><h1>HOW TO INSTALL</h1></strong></p>
+<ol>
+    <li>Download as zip file</li>
+    <li>Extract the file</li>
+    <li>Change the text "Your NAME"</li>
+    <li>How to change/add functions see the tutorial</li>
+</ol>
+
 <p>THIS A J A R V I S (personnel assistant)created using python.
 You have to type your name where its asked in the code.
 If you want to add a new website a place is given there to add.</p>
