@@ -25,7 +25,7 @@ Wolfram alpha API id
     engine.say(audio)
     engine.runAndWait()
 
-    def greetMe():                                                                         (Over here we define how we want to greet ourselfs)
+    def greetMe():                              (Over here we define how we want to greet ourselfs)
     currentH = int(datetime.datetime.now().hour)
     if currentH >= 0 and currentH < 12:
         speak('Good Morning!')
@@ -100,8 +100,7 @@ Wolfram alpha API id
             speak('Bye YOUR NAME, have a good day.')
             sys.exit()
 
-
-      <strong>YOU CAN KEEP ON ADDING elif and define different functions its upto u</strong>
+<strong>YOU CAN KEEP ON ADDING elif and define different functions its upto u</strong>
 
 
 
