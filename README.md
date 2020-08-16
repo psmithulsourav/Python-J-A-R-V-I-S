@@ -25,7 +25,7 @@ Wolfram alpha API id
     engine.say(audio)
     engine.runAndWait()
 
-def greetMe():    (Over here we define how we want to greet ourselfs)
+    def greetMe():                                                                         (Over here we define how we want to greet ourselfs)
     currentH = int(datetime.datetime.now().hour)
     if currentH >= 0 and currentH < 12:
         speak('Good Morning!')
@@ -36,13 +36,13 @@ def greetMe():    (Over here we define how we want to greet ourselfs)
     if currentH >= 18 and currentH !=0:
         speak('Good Evening!')
 
-greetMe()
+    greetMe()
 
-speak('Hello YOUR NAME')   (You have to add your name here)
-speak('How may I help you?')
+    speak('Hello YOUR NAME')   (You have to add your name here)
+    speak('How may I help you?')
 
-
-def myCommand():
+  
+    def myCommand():
    
     r = sr.Recognizer()                                                                                   
     with sr.Microphone() as source:                                                                       
@@ -60,7 +60,7 @@ def myCommand():
     return query
         
 
-if __name__ == '__main__':
+    if __name__ == '__main__':
 
     while True:
     
