@@ -113,6 +113,7 @@ if __name__ == '__main__':
                     speak(results)
         
             except:
+                speak('Google is better than me.')
                 webbrowser.open('www.google.com')
         
         speak('what else YOUR NAME')
